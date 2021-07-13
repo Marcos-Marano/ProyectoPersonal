@@ -5,10 +5,6 @@
   src: url(/fonts/AstroSpace.ttf);
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -178,7 +174,7 @@ li a.contact:hover {
         align-items: center;
         
         width: 100%;
-        height: 80vh;
+        height: 120vh;
         margin-top: 5rem;
         background-color: white;
         flex-wrap: wrap;
@@ -289,69 +285,6 @@ li a.contact:hover {
             }
           }
 
-          /* SECTIONS */
-
-          .section {
-            color: white;
-            margin-top: 2rem;
-          }
-           
-           .section-titulo {
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-           }
-
-          .section-lista {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 2rem;
-            padding: 2rem;
-          }
-
-          .section-div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          }
-
-          .section-div i {
-            font-size: 2.5rem;
-          }
-          .section-div i:hover {
-            font-size: 3rem;
-            color: #047e85 ;
-          }
-
-          @media (max-width: 1900px) {
-            .section {
-              color: black;
-            }
-            .section-div {
-              padding-bottom: 2rem;
-            }
-          }
+          /* IMAGENES */
 
           
-          @media (max-width: 700px) {
-            .section {
-              padding-top: 3rem;
-            }
-            .section-lista {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-wrap: wrap;
-              padding: 2rem;
-            }
-            .section-div {
-              padding-bottom: 2rem;
-            }
-            
-            .section-titulo {
-             padding: 2rem;
-            }
-          }
