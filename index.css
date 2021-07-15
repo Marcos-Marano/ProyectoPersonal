@@ -484,9 +484,10 @@ li a.contact:hover {
             font-size: 2rem;
           } 
 
-          @media (min-width: 450px) and (max-width: 1800px) {
+          @media (min-width: 400px) and (max-width: 1800px) {
             .btn-3 {
               color: black;
+              fon
             }
           }
 
