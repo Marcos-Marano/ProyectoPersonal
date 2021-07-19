@@ -303,6 +303,17 @@ li a.contact:hover {
             padding-top: 6rem;
         }
         }
+        @media (min-width: 750px) {
+          .main-nav-footer-proyectos{
+           width: 100%;
+           height: 200px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 6rem;
+           padding-top: 6rem;
+       }
+       }
        /**/
 
         .navlinks-footer {
@@ -338,6 +349,7 @@ li a.contact:hover {
             text-decoration: none;
             font-family: "AstroSpace", sans-serif;
             font-size: 1.5rem;
+            justify-content: center;
           }
 
           .navlinks-footer li a:hover {
@@ -365,7 +377,7 @@ li a.contact:hover {
           }
           
 
-          /* SECTIONS */
+          /* SECTIONS SOBRE MI */
 
           .section {
             color: black;
@@ -377,6 +389,10 @@ li a.contact:hover {
              flex-direction: column;
              justify-content: center;
              align-items: center;
+           }
+           .section-titulo-:hover {
+             color: #00adb5;
+             border-bottom: 2px solid #00adb5;
            }
 
           .section-lista {
@@ -392,6 +408,12 @@ li a.contact:hover {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            border: 2px solid black;
+            margin: 0 2rem;
+            padding: 2rem;
+            box-shadow: 7px -9px 22px 3px rgba(0,0,0,0.57);
+            -webkit-box-shadow: 7px -9px 22px 3px rgba(0,0,0,0.57);
+            -moz-box-shadow: 7px -9px 22px 3px rgba(0,0,0,0.57);
           }
 
           .section-div i {
@@ -403,7 +425,12 @@ li a.contact:hover {
           }
 
           .section-p {
-            padding: 2rem;
+            padding: 0 2rem;
+          }
+
+          .section-p:hover {
+            font-size: 2rem;
+            color: #00adb5;
           }
 
           @media (max-width: 1850px) {
@@ -460,76 +487,71 @@ li a.contact:hover {
               padding: none;
             }
           }
-          @media (max-width:450px) {
+          @media (max-width:1500px) {
             .section-div {
+              height: 350px;
               display: flex;
               align-items: center;
               justify-content: center;
-              
+              margin-bottom: 2rem;
+              padding: 1rem 0;
             }
+          
+            .section-div i {
+              font-size: 2rem;
+              padding-top: 1rem;
+            }
+            .section-div h3 {
+              font-size: 0.7rem;
+              margin: 1rem 0 0 0;
+            }
+            .section-p {
+              font-size: 10px;
+            }
+            .section-p:hover {
+              font-size: 15px;
+            }
+           
+          }
+
+          @media (max-width:450px) {
+            .section-p:hover {
+              font-size: 10px;
+            }
+            
           }
 
           /* BUTTON */
 
           .section-btn {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
           }
 
-          .btn-1 {
+          .btn-sobremi {
             width: 5rem;
             height: 5rem;
-            border-radius: 100%;
-            margin-right: 2rem;
-            box-shadow: 2px 2px 2px black;
-            cursor: pointer;
-          }
-          .btn-1:hover{
-            width: 5.5rem;
-            height: 5.5rem;
-            background-color: red;
-          }
-
-          .btn-1 i {
-            font-size: 3rem;
-          }
-
-          .btn-2 {
-            width: 5rem;
-            height: 2.5rem;
             border-radius: 7%;
             margin-right: 2rem;
             box-shadow: 2px 2px 2px black;
             cursor: pointer;
-            font-size: 1rem;
-            color: black;
-          }
-
-          .btn-2:hover {
-            width: 5.5rem;
-            height: 3rem;
-            font-size: 1.1rem;
-            background-color: #047e85;
-            color: white;
-          } 
-
-          .btn-3 {
-            border: 2px solid transparent;
-            background-color: transparent;
-            font-size: 1.5rem;
-            color: white;
-          }
-
-          .btn-3:hover {
             font-size: 2rem;
-          } 
+            color: black;
+            border-radius: 50%;
+          }
+          .btn-sobremi i {
+            font-size: 3rem;
+          }
 
-          @media (min-width: 400px) and (max-width: 1800px) {
-            .btn-3 {
-              color: black;
-              
-            }
+          .btn-sobremi:hover {
+            background-color: black;
+            color: white;
+            transform: rotate(180deg);
+            border-radius: 50%;
+          } 
+          .btn-texto {
+            transform: rotate(180deg);
           }
 
           /* INFO ¿QUE ES EL CV */
